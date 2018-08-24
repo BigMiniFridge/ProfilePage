@@ -207,6 +207,6 @@ $(".lx-form form textarea").on("keyup",function(){
 	return false;
 });
 
-$(".lx-portfolio-item a").on("click", function(event) {
+$(".lx-portfolio-item a, .lx-social-links a").on("click", function(event) {
     event.stopPropagation();
 });
