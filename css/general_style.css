@@ -45,6 +45,7 @@ h4{
 .imglink {
 	height: 23px;
 	width: 17px;
+	display: inline-block;
 }
 .animated{
 	

@@ -206,3 +206,7 @@ $(".lx-form form textarea").on("keyup",function(){
 	
 	return false;
 });
+
+$(".lx-portfolio-item a").on("click", function(event) {
+    event.stopPropagation();
+});

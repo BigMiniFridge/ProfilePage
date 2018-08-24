@@ -434,7 +434,8 @@ a.btn-2{
 
 /*  skills  */
 .lx-block-gray{
-	background: #cffcff;
+	background: #999999;
+
 }
 .lx-bars-chart{
 	display: inline-block;
@@ -638,6 +639,7 @@ a.btn-2{
 /*  Contact  */
 .lx-block-black{
 	background: #3a3a39;
+	margin: 20px;
 }
 .lx-block-title-white{
 	color: #FFFFFF;
