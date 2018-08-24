@@ -26,6 +26,26 @@ h3,h2,h1{
 	font-weight:normal;
 	text-transform:capitalize;
 }
+
+h4{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 0;
+	font-weight: normal;
+	font-family: 'Yellowtail';
+	line-height: 30px;
+	color: inherit;
+	text-align: center;
+	background: #f97c10;
+	border-bottom: 0;
+}
+
+.imglink {
+	height: 23px;
+	width: 17px;
+}
 .animated{
 	
 	transition:ease all 0.3s;
