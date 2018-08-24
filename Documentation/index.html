@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Kimi - Documentation</title>
+        <meta name="description" content="Kimi - Responsive Personal Business Card Template">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Awesomefont -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Main Style of the template -->
+		<link rel="stylesheet" href="css/main_style.css">
+		<!-- Syntax Highlighter -->
+		<link rel="stylesheet" href="css/shCoreDefault.css"/>		
+	</head>
+	<body>
+		<div id="hb-wrapper"><!-- Start of the Main wrapper -->
+			<div id="hb-header" class="hb-header"><!-- Start of the Main header -->
+				<div class="hb-logo">
+					<h1><a href="#">Kimi</a></h1>
+				</div><!-- Logo  -->
+				<div class="hb-menu">
+					<ul>
+						<li><a href="#start" class="active">Start</a></li>
+						<li><a href="#structure">Structure</a></li>
+						<li><a href="#html">HTML</a></li>
+						<li><a href="#menu">The Main Menu</a></li>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#titles">The Main Titles</a></li>
+						<li><a href="#knowme">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#experiences">Experiences</a></li>
+						<li><a href="#studies">Studies</a></li>
+						<li><a href="#works">portfoliio</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="#css">CSS</a></li>
+						<li><a href="#js">Javascript / JQuery</a></li>
+					</ul>
+				</div>
+				<div class="hb-copyright">
+					<p>&copy; Copyright Linx Theme 2017</p>
+				</div>
+			</div><!-- End of the Main header -->
+			<div id="hb-main" class="hb-main"><!-- Start of the Main Body -->
+				<div class="hb-start" id="start">
+					<h1>Kimi</h1>
+					<h3>Responsive Personal Business Card Template</h3>
+					<ul>
+						<li>Created: 27/01/2017</li>
+						<li>By: LinxTheme</li>
+					</ul>
+					<p>Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free and contact us through this email <a href="mailto:lightinthedarkway@gmail.com">lightinthedarkway@gmail.com</a><p>
+				</div>
+				<div class="hb-structure" id="structure">
+					<h3>Structure</h3>
+					<ul>
+						<li>1.&nbsp;/HTML files <span>(All html files)</span></li>
+						<li>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/css <span>(Template and plugings stylesheet)</span></li>
+						<li>4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/images <span>(Main images)</span></li>
+						<li>5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/js <span>(All needed javascript plugin and files)</span></li>
+					</ul>
+				</div>	
+				<div class="hb-structure">
+					<h3 id="html">HTML</h3>
+					<h3 id="menu">The Main Menu</h3>
+					<img src="images/menu.png" />
+					<p>The Menu is made in a horizontal style with a white color. 
+					It has the class name "lx-main-menu" in the main css file. It is fixed and scroll down with the content. 
+					the following code is for the menu, you can simply change the text and the icons.
+					The active menu has the class name "active", and each link has a data-title attribute that has the class name of the bloc it should show after it is clicked.</p>
+					<pre class="brush: html;">
+						<div class="lx-main-menu">
+							<i class="fa fa-bars"></i>
+							<ul>
+								<li class="lx-menu-item active" data-url="home" ><a href="#home" title="home">home <span></span></a></li>
+								<li class="lx-menu-item" data-url="about"><a href="#about" title="about">about <span></span></a></li>
+								...
+							</ul>
+						</div>	
+					</pre>
+					<p>The element "i" that has the class name "fa fa-bars" is the button that shows and hide the menu.</p>
+					<p>If you want to change the style of the menu, just open the folder css, and then choose the file main_style.css and open it with a text editor, and search for the class "lx-main-menu", and custumize it as you wish, and here is a sample of the css code :</p>
+					<pre class="brush: css;">
+						/* Main Menu */
+						.lx-main-menu{
+							...
+						}
+						@media(max-width:960px){
+							.lx-main-menu{
+								...
+							}
+						}
+					</pre>
+				</div>
+				<div class="hb-structure" id="home">
+					<h3>The Home</h3>
+					<p>This bloc contains, an background image, a "h2" and "h1" title that is the name and two buttons.</p>
+					<img src="images/home.png" />
+					<p>The bloc has the class names "lx-intro" for the design and "home" for the menu event and the lx-blocs for the menu event as well, and the following elements :</p>  
+					<pre class="brush: html;">
+					<!-- Hero -->
+					<div class="home lx-blocs container-fluid lx-intro ">
+						<div class="lx-intro-warp">
+							<div class="row">
+								<div class="col-lg-12">
+									<h2>welcom TO </h2>
+									<h1><b>amen roben's</b> resume</h1>
+									<a href="#" class="btn-1" title="download cv">download cv</a>
+									<a href="#contact" class="btn-2" title="hire me">hire me</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Hero -->
+					</pre>
+					<p>To change the home style, simply search for the class "lx-intro" and change whatever you like, and here is a sample of the css code :</p>
+					<pre class="brush: css;">
+						.lx-intro{
+							...
+						}
+						@media(max-width:960px){
+							.lx-intro{
+								...
+							}
+						}
+					</pre>	
+				</div>
+				<div class="hb-structure" id="titles">
+					<h3>The Main Titles</h3>
+					<p>The main titles are the titles that have a thick blue cercle infront of them as in the following picture:</p>
+					<img src="images/big_titles.png" />
+					<p>Here is the html code for these titles :</p>
+					<pre class="brush: html;">
+						<div class="col-lg-12 lx-block-title">
+							<h1>about me</h1>
+							<span></span>
+						</div>
+					</pre>
+					<p>And the css code for this title is in the css file named main_style.css, its code is as follows :</p>
+					<pre class="brush: css;">
+						.lx-block-title{
+							...
+						}
+						.lx-block-title h1{
+							...
+						}
+						.lx-block-title span{
+							...
+						}
+
+					</pre>
+				</div>
+				<div class="hb-structure" id="knowme">
+					<h3>about me</h3>
+					<p>This bloc has the class name "about", and it has "p" , and perssonal image on tag "img" and some social links "a".</p>
+					<img src="images/about.png" />
+					<pre class="brush: html;">
+						<!-- About -->
+						<div class="about lx-blocs lx-block container-fluid ">
+							<div class="lx-warp container">
+								<div class="row">
+									<div class="col-lg-12 lx-block-title">
+										<h1>about me</h1>
+										<span></span>
+									</div>
+									<div class="col-lg-6">
+										<p class="lx-txt">
+											Morbi nec enim ut ligula pretium efficitur. Curabitur placerat iaculis nisl, sit amet iaculis augue varius nec. In euismod auctor augue, quis fringilla justo maximus eu. Donec quis ante non justo pellentesque pulvinar. Cras lobortis, diam ac pharetra ultrices, nunc nunc fermentum ligula, porta pretium enim tellus ac augue.
+										</p>
+										<p class="lx-txt">
+											Vivamus sagittis diam eget ex viverra rhoncus. Quisque sit amet tristique dui. Sed non est blandit, iaculis ipsum ut, lobortis purus. Quisque convallis ullamcorper convallis.
+										</p>
+										<p class="lx-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat nibh sapien, eu suscipit odio imperdiet et. Praesent eget volutpat neque. 
+										</p>
+										<img src="images/signe.png" alt="signe" class="lx-signe">
+										<div class="lx-social-links">
+											<a href="#" title=""><i class="fa fa-facebook"></i></a>
+											<a href="#" title=""><i class="fa fa-twitter"></i></a>
+											<a href="#" title=""><i class="fa fa-snapchat"></i></a>
+											<a href="#" title=""><i class="fa fa-instagram"></i></a>
+										</div>
+									</div>
+									<div class="col-lg-5 lx-about-img">
+										<img src="http://placehold.it/370x415" alt="person">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /about -->
+					</pre>
+					<p>The main_style.css contains the style for this "lx-blok" and the text has class name lx-txt bloc and you can change it as you wish, here is code :</p>
+					<pre class="brush: css;">
+						/*  About  */
+						.lx-txt{
+							...
+						}
+						.lx-signe{
+							...
+						}
+						.lx-social-links{
+							...
+						}
+					</pre>
+				</div>
+				<div class="hb-structure" id="skills">
+					<h3>Skills</h3>
+					<img src="images/bars.png" />
+					<p>To control the progress of the bars, use the "data-max" attribute of the div that has the class name "lx-bar" with a numerical value.</p>
+					<pre class="brush: html;">
+						<div class="lx-bar" data-max="100">
+							<p>HTML5</p>
+							<div class="lx-bar-counter">0</div>
+							<div class="lx-bar-bg">
+								<div class="lx-bar-fill">
+								</div>
+							</div>
+						</div>
+					</pre>
+					<p>To change the color, height and speed of the progress bars, search for "lx-bar-fill" in the main css file. it looks as follows :</p>
+					<pre class="brush: css;">
+						.lx-bar-fill{
+							width:0%;
+							height:10px;
+							background:#1486b5;
+							-webkit-transition: all 2s;
+							transition: all 2s;
+						}
+					</pre>
+					
+				</div>
+				<div class="hb-structure" id="experiences">
+					<h3>Experiences and studies</h3>
+					<img src="images/experiences.png" />
+					<p>The experiences bloc contains a "div" list, each element "lx-resume-item" as a "p" for date, a "h2" as a title, and "h5" as a desciption of the experience or the study.</p>
+					<p>This bloc has the class name "lx-resume-item", and here is the html code of it :</p>
+					<pre class="brush: html;">
+						<div class="lx-resume-items">
+							<div class="lx-resume-item col-lg-6">
+								<div class="lx-resume-date"><p>2012 - 2014</p></div>
+								<div class="lx-resume-info">
+									<h2 class="lx-resume-title">university harverd</h2>
+									<h5 class="lx-resume-detail">physical sciences</h5>
+								</div>
+							</div>
+							....
+						</div>
+					</pre>
+					<p>The css style can be found in the main_style.css file, and it is as follows :</p>
+					<pre class="brush: css;">
+						.lx-resume-items{
+							....
+						}
+						.lx-resume-item{
+							...
+						}
+						.lx-resume-date{
+							...
+						}
+						}
+					</pre>
+				</div>
+				<div class="hb-structure" id="studies">
+					<h3>Services</h3>
+					<img src="images/boxes.png" />
+					<p>Nice boxes for illustrating the services you provide that has the class name "lx-services-item", and contain an icon, a "h2" title and a "p", aligned to the left.</p>
+					<p>Here is the basic code for a box :</p>
+					<pre class="brush: html;">
+							<div class="lx-services-item col-lg-3">
+								<i class="lnr lnr-pencil"></i>
+								<h2>web design</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>					</pre>					
+					<p>Here is the css code for this boxes that you can find in the main_style.css :</p>
+					<pre class="brush: css;">
+						.lx-services-item{
+							...
+						}
+						@media(max-width:960px){
+
+						.lx-services-item{
+							...
+						}
+					</pre>	
+				</div>
+				<div class="hb-structure" id="works">
+					<h3>Works</h3>
+					<img src="images/projects.png" />
+					<p>The projects bloc contains a "picture", and he is on mosaic style.</p>
+					<p>This bloc has the class name "lx-portfolio-item", and here is the html code of it :</p>
+					<pre class="brush: html;">
+						<div class="lx-portfolio">
+							<div class="col-lg-3 col-xs-6 lx-portfolio-item ">
+								<div class="lx-potfolio-item-corp">
+								<img src="http://placehold.it/2571x2448" alt="pr1" class="animated">
+								</div>
+							</div>
+						</div>
+					</pre>
+					<p>The css style can be found in the main_style.css file, and it is as follows :</p>
+					<pre class="brush: css;">
+						.lx-portfolio{
+							...
+						}
+						.lx-portfolio-item{
+							...
+						}
+					</pre>
+				</div>
+				<div class="hb-structure" id="contact">
+					<h3>Contact</h3>
+					<img src="images/contact_box.png" />
+					<p>The contact boxes contain an icon "i" and a "p" that is either the phone number or the email or the address</p>
+					<pre class="brush: html;">
+						<div class="lx-contact-info-item col-lg-12">
+								<i class="lnr lnr-map-marker"></i>
+								<p>hay salama 3 gr 7 block M Nr 22</p>
+						</div>
+					</pre>
+					<p>The css for the contact boxes for manipulation and editing is in the main_style.css file, and it is as follows :</p>
+					<pre class="brush: css;">
+						.lx-contact-info{
+							...
+						}
+						.lx-contact-info-item{
+							...
+						}
+					</pre>
+					<img src="images/contact.png" />
+					<p>This bloc contains a form, the latter contains textboxes, a textarea and a button</p>
+					<p>This bloc has the class name "lx-form", and here is the html code of it :</p>
+					<pre class="brush: html;">
+						<div class="lx-form col-lg-7">
+							<form action="#" method="post" autocomplete="off">
+								<div class="lx-contact-field">
+									<input type="text" name="fullname" placeholder="Your fullname here ..." />
+								</div>
+								<div class="lx-contact-field">
+									<input type="text" name="email" placeholder="Your e-mail here ..." />
+								</div>
+								<div class="lx-contact-field">
+									<textarea name="message" placeholder="Your message here ..."></textarea>
+								</div>
+								<input type="button" name="submit" value="GET IN TOUCH" />
+							</form>
+						</div>
+					</pre>
+					<p>The css style can be found in the main_style.css file, and it is as follows :</p>
+					<pre class="brush: css;">
+						.lx-form{
+							...
+						}
+						.lx-form input{
+							...
+						}
+											</pre>
+				</div>		
+				<div class="hb-structure" id="columns">
+					<h3>Columns</h3>
+					<p>These basic columns are based on bootstrap grid.			
+				</div>
+				<div class="hb-structure" id="css">
+					<h3>CSS</h3>
+					<p>The CSS code in this templates is made of three files, the generale_settings, that contains the common setting between all elements. The main_style which contains almost all the CSS of this templates I can say even 99%. And the last but not least the reset_style that contains some classes that help change some predefined values in some blocs such as the padding the margin and so on ...</p>
+					<p>Here is the mains structure of the css code in this template : </p>
+					<pre class="brush: css;">
+						/* Scrollbar Color */
+						*::-webkit-scrollbar-thumb:hover{
+							background:#ffd700;
+						}
+
+						/* Loader */
+						.lx-loader{
+							display:flex;
+							align-items:center;
+							justify-content:center;
+							position:fixed;
+							z-index:20;
+							left:0px;
+							top:0px;
+							width:100%;
+							height:100%;
+							text-align:center;
+							background:#FFFFFF;
+						}
+					</pre>	
+					<p>The main_style file contains a content table which will help you found quickly and easily the block you want and here it is in case you miss it : </p>
+					<pre class="brush: css;">
+						/* Kimi is a responsive personal business card template
+						Here is the content of this css file
+
+						- Main Wrapper
+							- Loader
+							- Color Setting
+							- Header
+								- Menu & logo
+							- Main Content
+								- Home
+								- About
+								- My Skills
+								- Education & Experiences
+								- Services
+								- My projects
+									- Portfolio
+								- Contact
+							- Footer
+							- Popup
+								
+						*/
+					</pre>	
+					<p>The attributes for each elements appear in the following order : </p>
+					<ul>
+						<li>float :</li>
+						<li>display :</li>
+						<li>position (top:right:bottom:left) :</li>
+						<li>width :</li>
+						<li>height :</li>
+						<li>margin :</li>
+						<li>padding :</li>
+						<li>font (size:family:weight:style) :</li>
+						<li>text (align-transform) :</li>
+						<li>background :</li>
+						<li>color :</li>
+						<li>border :</li>
+						<li>border-radius :</li>
+						<li>box-shadow :</li>
+						<li>opacity :</li>
+						<li>transform :</li>
+						<li>transition :</li>
+					</ul>				
+				</div>
+				<div class="hb-structure" id="js">
+					<h3>Javascript / JQuery</h3>
+					<p>The mains js files are the JQuery library 1.12.4, and the main script file, the popup, and the gallery filter.</p>
+					<p>Most of the scripts in this template are our own coding.</p>
+					<p>Here is a sample of the js code we are using : </p>
+					<pre class="brush: js;">
+						// Document load event
+
+"use strict";
+
+var wrapper = $(".lx-wrapper");
+var menu = $(".lx-main-menu", ".lx-wrapper");
+var blocs = $(".lx-blocs", ".lx-wrapper");
+var infoImg = $(".lx-personal-info-img", ".lx-wrapper");
+var mainImg = $(".lx-personal-info-img img");
+var settings = $(".lx-settings", "body");
+
+$(document).on("ready",function(){
+	
+	// Loader Fade Out
+	window.setTimeout(function(){
+		$(".lx-loader", "body").fadeOut();
+		return false;
+	},5000);
+
+	// Redirection to the requested bloc
+	hashHistory();
+
+	return false;
+});
+
+$(window).on("hashchange",function(){	
+	// Redirection to the requested bloc
+	hashHistory();
+	
+	return false;
+});
+
+function hashHistory(){
+	
+	var page = "";
+	if(window.location.hash) {
+		page = document.location.hash;
+		page = page.replace(/\#/,"");
+	}
+	else{
+		page = "home";
+	}
+	
+	// Remove active class from menus
+	$(".lx-main-menu ul li a").removeClass("active");
+	
+	// Set clicked menu active
+	$(".lx-main-menu ul li a[data-url='"+page+"']").addClass("active");
+			
+	// Show correspondant scetion
+	if($(window).width() > 768){
+		blocs.fadeOut();
+		$("."+$(".lx-main-menu ul li a[data-url='"+page+"']").attr("data-title")).fadeIn();		
+	}
+	else{
+		$('html, body').animate({scrollTop : $("."+$(".lx-main-menu ul li a[data-url='"+page+"']").attr("data-title")).offset().top-50},1000);
+		$(".lx-main-menu ul").slideUp();
+	}
+	
+}
+
+
+$(".lx-skills").on("scroll",function(){
+	if($(this).scrollTop() > $(".lx-bars-chart", this).position().top){
+		// Loading bars
+		for(var i = 0;i < $(".lx-bar", ".lx-bars-chart").length;i++){
+			$(".lx-bar:eq("+i+") .lx-bar-counter", ".lx-bars-chart").text($(".lx-bar:eq("+i+")", ".lx-bars-chart").attr("data-max")+"%");
+			$(".lx-bar:eq("+i+") .lx-bar-fill", ".lx-bars-chart").css("width",$(".lx-bar:eq("+i+")", ".lx-bars-chart").attr("data-max")+"%");			
+		}	
+	}
+	
+	return false;
+});
+
+$(document).on("scroll",function(){
+	if($(this).scrollTop() > $(".lx-bars-chart", this).position().top - 300){
+		// Loading bars
+		for(var i = 0;i < $(".lx-bar", ".lx-bars-chart").length;i++){
+			$(".lx-bar:eq("+i+") .lx-bar-counter", ".lx-bars-chart").text($(".lx-bar:eq("+i+")", ".lx-bars-chart").attr("data-max")+"%");
+			$(".lx-bar:eq("+i+") .lx-bar-fill", ".lx-bars-chart").css("width",$(".lx-bar:eq("+i+")", ".lx-bars-chart").attr("data-max")+"%");			
+		}	
+	}
+	
+    // Set Current Section
+    for (var i = 0; i < $(".lx-blocs").length; i++) {
+        if ($(this).scrollTop() > $(".lx-blocs:eq(" + i + ")").offset().top) {
+            $(".lx-menu-item").removeClass("active");
+            $(".lx-menu-item[data-url='" + $(".lx-blocs:eq(" + i + ")").attr('class').split(' ')[0] + "']").addClass("active");
+
+            
+        }
+    }
+	return false;
+});
+
+// Header activation background 
+$(document).on("scroll",function(){
+	if ($(window).scrollTop() > 50) {
+        $("#lx-header").addClass("active");
+    } else {
+        $("#lx-header").removeClass("active");
+    }	
+	
+	
+	return false;
+});
+
+// Main menu event : show correspondant section
+$(".lx-main-menu ul li ").on("click", function() {
+    // Remove active class from menus
+    $(".lx-main-menu ul li ").removeClass("active");
+    // Set clicked menu active
+    $(this).addClass("active");
+    history.pushState('data', '', 'index.html#' + $(this).attr("data-url"));
+    // Scroll to the correspondant scetion
+    $('html, body').animate({
+        scrollTop: $("." + $(this).attr("data-url")).offset().top + 2
+    }, 1000);
+    if ($(window).width() < 769) {
+        menu.css("left", "-40px");
+        $(".lx-main-menu > i").attr("class", "fa fa-bars");
+    }
+    return false;
+});
+
+// Responsive menu event
+$(".lx-main-menu > i").on("click",function(){
+	
+	var menuUl = $(".lx-main-menu ul");
+	if(menuUl.css("display") != "block"){
+		menuUl.slideDown();
+	}
+	else{
+		menuUl.slideUp();
+	}
+	
+	return false;
+});	
+
+// Responsive color setting event
+$(".lx-settings > i").on("click", function() {
+    if (settings.css("left") === "-160px") {
+        settings.css("left", "0px");
+        if ($(window).width() < 769) {
+            $(".lx-main-menu > i").attr("class", "fa fa-bars");
+            menu.css("left", "-40px");
+            $(".lx-social-media > i").attr("class", "fa fa-share-alt");
+            socialMedia.css("right", "-40px");
+        }
+    } else {
+        settings.css("left", "-160px");
+    }
+    return false;
+});
+
+// Responsive color event
+$(".lx-colors > a").on("click", function() {
+    // Change style
+    $("link[title='main']").attr("href", "css/" + $(this).attr("data-css-link"));
+    return false;
+});
+
+// Contact Form Errors
+$(".lx-form form input[type='button']").on("click",function(){
+	
+	var fullname = $(".lx-form form input[name='fullname']");
+	if(fullname.val() == ""){
+		fullname.after("<span>This field must be filled</span>").css("border-right","3px solid #a94442");
+	}
+	
+	var email = $(".lx-form form input[name='email']");
+	var patt = /^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+	if(!patt.test(email.val())){
+		email.after("<span>Invalid Email</span>").css("border-right","3px solid #a94442");
+	}
+	
+	var txtarea = $(".lx-form form textarea");
+	if(txtarea.val() == ""){
+		txtarea.after("<span>This field must be filled</span>").css("border-right","3px solid #a94442");
+	}
+	
+	return false;
+});
+
+$(".lx-form form input[name='email']").on("keyup",function(){
+	var patt = /^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+	if(patt.test($(this).val())){
+		$(this).css("border-right","0px").next("span").remove();
+	}
+	
+	return false;
+});
+
+$(".lx-form form input[name='fullname']").on("keyup",function(){
+	if($(this).val() != ""){
+		$(this).css("border-right","0px").next("span").remove();
+	}
+	
+	return false;
+});
+
+$(".lx-form form textarea").on("keyup",function(){
+	if($(this).val() != ""){
+		$(this).css("border-right","0px").next("span").remove();
+	}
+	
+	return false;
+});
+					</pre>
+					<p>I used also the syntaxhighlighter 3.0.83 jquery libarary to format the code text (html, css, js) in this documentation and in the template as well.</p>
+					<p>I hope this documentation will be satisfactory to you, and if you feel anything is wrong with the template please contact us in the following email <a href="mailto:lightinthedarkway@gmail">lightinthedarkway@gmail</a> or contact us through our page in themeforest.</p>
+					<p><b>LinxTheme</b><br />Best Regards</p>
+				</div>	
+			</div><!-- End of the Main Body -->
+		</div><!-- End of the Main wrapper -->
+		<!-- JQuery -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script>
+			$(".hb-menu ul li a").on("click",function(){
+				$(".hb-menu ul li a").removeClass("active");
+				$(this).addClass("active");
+			})
+		</script>		
+		<!-- Syntax Highlighter -->
+		<script type="text/javascript" src="js/shCore.js"></script>
+		<script type="text/javascript" src="js/shBrushXml.js"></script>
+		<script type="text/javascript" src="js/shBrushCss.js"></script>
+		<script type="text/javascript" src="js/shBrushJScript.js"></script>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>	
+
+	</body>
+</html>
